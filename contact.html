@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Chetty & Chetty Incorporated</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="top-bar">
+    <div class="container top-bar-content">
+      <div class="top-info">
+        <span><i class="fa-solid fa-location-dot"></i> 444 Jabu Ndlovu Street, Pietermaritzburg</span>
+        <span><i class="fa-solid fa-phone"></i> 033 394 8115 / 120 / 114</span>
+      </div>
+      <div class="top-credentials">
+        <span>Practice No: 41751</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="Chetty & Chetty Incorporated home">
+        <img src="images/logo.jpg" alt="Chetty & Chetty Incorporated Personal Injury Attorneys" class="site-logo-img">
+      </a><button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="team.html">Our Team</a></li>
+        <li><a href="contact.html" class="active btn-gold-nav">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>Contact Chetty & Chetty Incorporated</h1>
+        <p>Get in Touch with Our Legal Team Today</p>
+      </div>
+    </div>
+
+    <section class="section-padding container">
+      <div class="grid-2">
+        <div>
+          <h2>Our Office Location & Contact Details</h2>
+          <div class="contact-info-list margin-top">
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot icon-gold"></i>
+              <div>
+                <strong>Physical Address:</strong>
+                <p>444 Jabu Ndlovu Street, Pietermaritzburg, 3201</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-box-archive icon-gold"></i>
+              <div>
+                <strong>Postal Address:</strong>
+                <p>P.O. BOX 8218, CUMBERWOOD, 3235</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-phone icon-gold"></i>
+              <div>
+                <strong>Telephone Lines:</strong>
+                <p>033 394 8115 | 033 394 8120 | 033 394 8114</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-brands fa-whatsapp icon-gold"></i>
+              <div>
+                <strong>WhatsApp Business:</strong>
+                <p><a href="https://wa.me/27849897104" target="_blank" class="gold-text">084 989 7104</a></p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fa-solid fa-envelope icon-gold"></i>
+              <div>
+                <strong>Email:</strong>
+                <p>reception@chettylawnic.co.za</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container glow-card">
+          <h3>Send a Direct Consultation Request</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" required placeholder="Your full name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone / WhatsApp Number</label>
+              <input type="tel" id="phone" required placeholder="084 123 4567">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" required placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label for="claimType">Claim Category</label>
+              <select id="claimType">
+                <option>Road Accident Fund (RAF)</option>
+                <option>Medical Negligence</option>
+                <option>Personal Injury / Slip & Fall</option>
+                <option>Unlawful Arrest / Police</option>
+                <option>Workplace Accident / COIDA</option>
+                <option>Other / General Inquiry</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Details of Incident</label>
+              <textarea id="message" rows="4" placeholder="Briefly describe what happened..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-block btn-glow">Submit Consultation Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
