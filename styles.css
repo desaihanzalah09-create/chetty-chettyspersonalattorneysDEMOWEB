@@ -411,6 +411,143 @@ ul {
   margin-bottom: 15px;
 }
 
+/* INDEPENDENT CLAIMS SUPPORT */
+.specialist-support {
+  padding: 0 0 100px;
+}
+
+.specialist-support-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.15fr .85fr;
+  gap: 1px;
+  background: var(--accent-border);
+  border: 1px solid var(--accent-border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.specialist-support-intro,
+.specialist-service-list,
+.specialist-contact {
+  background: var(--bg-secondary);
+  padding: 38px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gold-primary);
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+
+.specialist-support h2,
+.support-contact-inner h2 {
+  margin: 14px 0 16px;
+}
+
+.specialist-disclosure {
+  margin-top: 18px;
+  color: var(--text-muted);
+  font-size: .86rem;
+  line-height: 1.6;
+}
+
+.specialist-service-list {
+  display: grid;
+  align-content: center;
+  gap: 18px;
+}
+
+.specialist-service {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.specialist-service i {
+  width: 20px;
+  color: var(--gold-primary);
+  text-align: center;
+}
+
+.specialist-contact {
+  background: #111d34;
+}
+
+.specialist-name {
+  margin: 0 0 5px;
+  color: var(--gold-primary);
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.specialist-tagline {
+  margin: 0 0 22px;
+  color: var(--text-muted);
+  font-size: .9rem;
+}
+
+.specialist-contact a,
+.support-contact-details a,
+.support-contact-details span {
+  display: block;
+  margin: 12px 0;
+  color: var(--text-primary);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.specialist-contact a:hover,
+.support-contact-details a:hover {
+  color: var(--gold-primary);
+}
+
+.specialist-contact i,
+.support-contact-details i {
+  width: 20px;
+  color: var(--gold-primary);
+}
+
+.specialist-address {
+  margin: 20px 0 0;
+  color: var(--text-muted);
+  font-size: .9rem;
+  line-height: 1.6;
+}
+
+.support-contact-section {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--accent-border);
+}
+
+.support-contact-inner {
+  display: grid;
+  grid-template-columns: 1.35fr .65fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.support-contact-details {
+  padding: 28px 30px;
+  border-left: 3px solid var(--gold-primary);
+  background: var(--bg-primary);
+}
+
+.support-contact-details strong {
+  display: block;
+  margin-bottom: 18px;
+  color: var(--gold-primary);
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+}
+
 /* PRACTICE & TEAM CARDS */
 .practice-card, .team-card {
   background: var(--bg-secondary);
@@ -537,11 +674,18 @@ ul {
   line-height: 1.45;
 }
 
-/* FIRM CREDENTIALS BOX */'@
-
-$css += @'
+/* FIRM CREDENTIALS BOX */
 
 @media (max-width: 992px) {
+  .specialist-support-grid,
+  .support-contact-inner {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .specialist-contact {
+    grid-column: 1 / -1;
+  }
+
   .navbar {
     padding: 10px 0;
   }
@@ -588,6 +732,34 @@ $css += @'
 }
 
 @media (max-width: 760px) {
+  .specialist-support {
+    padding-bottom: 68px;
+  }
+
+  .specialist-support-grid,
+  .support-contact-inner {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+
+  .specialist-support-intro,
+  .specialist-service-list,
+  .specialist-contact {
+    padding: 28px 24px;
+  }
+
+  .specialist-contact {
+    grid-column: auto;
+  }
+
+  .support-contact-inner {
+    gap: 30px;
+  }
+
+  .support-contact-details {
+    padding: 24px;
+  }
+
   .container {
     padding: 0 18px;
   }
@@ -1063,4 +1235,3 @@ $css += @'
     margin-right: 22px;
   }
 }
-
